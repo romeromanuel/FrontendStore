@@ -1,0 +1,120 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** Reset para REMS - 1rem = 10px **/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    height: 100%;
+    background-color: #4EC2E7;
+    
+    
+}
+
+/** Globales **/ 
+.contenedor {
+    max-width: 1000px;  
+    width: 95%;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+}
+h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/** Header **/
+.site-header {
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+/** Hero **/
+.hero {
+    margin-bottom: 4rem;
+}
+
+
+/** Nuestros Productos **/
+.lista-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+    margin-top: 4rem;
+}
+@media (min-width: 768px) {
+    .lista-productos {
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+}
+.producto {
+    text-align: center;
+}
+.producto img {
+    border: 1rem solid #109ad4;
+    transition: border-color .3s ease-in-out;
+}
+.producto img:hover {
+    border: 1rem solid #04628a;
+}
+.producto p {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.producto p span {
+    color: #FFCE00;
+    font-size: 3rem;
+    font-weight: bold;
+}
+@media (min-width: 768px) {
+    .producto p {
+        font-size: 2.8rem;  
+    }
+    .producto p span {
+        font-size: 4rem;
+    }
+}
+
+
+
+/** Boton **/
+.boton {
+    background-color:#FFCE00;
+    color: #109ad4;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+/** Footer **/
+.site-footer {
+    background-color: #04628a;
+    margin: 4rem 0 0 0;
+    padding: 1rem 0;
+}
+.site-footer p {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0;
+}
+.redes-sociales {
+    color: white;
+    font-size: 3rem;
+}
+.redes-sociales i {
+    margin-right: 2rem;
+}
